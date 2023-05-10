@@ -1,26 +1,29 @@
-package com.jpa.spa.dao;
+package com.jpa.spa.entitiy;
 
 import jakarta.persistence.*;
 
 /*table and column annotations are optional. Usually not a recommended approach*/
 
 @Entity
-@Table(name="student")
-public class Student implements Person{
+public class Student {
 
     @Id
-    @Column(name="id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name="first_name")
     private String firstName;
 
-    @Column(name="last_name")
     private String lastName;
 
-    @Column(name="email")
     private String email;
+
+    private Student(){};
+
+    public Student(String firstName, String lastName, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+    }
 
     public int getId() {
         return id;
@@ -55,8 +58,12 @@ public class Student implements Person{
     }
 
     @Override
-    public String individualInfo() {
-        return "First Name: " + getFirstName() + " Last Name: " + getLastName() +
-                ". Contact Info: " + getEmail() + ".";
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", email='" + email + '\'' +
+                '}';
     }
 }
