@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8210ec78-783c-4401-be00-985ea44a35b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/spa/dao/StudentDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/spa/dao/StudentDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/spa/SpaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/spa/SpaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/spa/dao/Person.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/spa/dao/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/spa/entitiy/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/spa/dao/StudentDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/spa/dao/StudentDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/spa/dao/StudentDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/spa/dao/StudentDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/spa/SpaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/spa/SpaApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/spa/dao/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/spa/dao/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/spa/dao/StudentDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/spa/dao/StudentDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/spa/dao/StudentDAOImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/spa/dao/StudentDAOImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
