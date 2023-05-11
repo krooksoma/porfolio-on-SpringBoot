@@ -5,14 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8210ec78-783c-4401-be00-985ea44a35b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy-datasource.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/spa/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/spa/dao/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/spa/dao/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/spa/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/spa/dao/StudentDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/spa/dao/StudentDAOImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/spa/SpaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/spa/SpaApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/spa/dao/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/spa/dao/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/spa/entitiy/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/spa/SpaApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/spa/SpaApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/spa/dao/Person.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/spa/dao/Student.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,12 +35,16 @@
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
       <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -70,6 +76,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
