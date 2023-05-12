@@ -1,4 +1,4 @@
-package com.jpa.spa;
+package com.jpa.schoolDirectory;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

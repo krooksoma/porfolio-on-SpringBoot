@@ -1,6 +1,6 @@
-package com.jpa.spa.dao;
+package com.jpa.schoolDirectory.dao;
 
-import com.jpa.spa.entitiy.Student;
+import com.jpa.schoolDirectory.entitiy.Student;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.TypedQuery;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,5 +50,25 @@ public class StudentDAOImpl implements StudentDAO{
         theQuery.setParameter("theData", lastName);
 
         return theQuery.getResultList();
+    }
+
+    @Override
+    @Transactional
+    public void updateStudentFirstName(Integer id, String info) {
+        //find student in database
+        Student student = entityManager.find(Student.class, id);
+
+        //change information
+        student.setFirstName(info);
+
+        //update information in database
+        entityManager.merge(student);
+    }
+
+    @Override
+    @Transactional
+    public void deleteStudent(Integer id) {
+        Student student = entityManager.find(Student.class, id);
+        entityManager.remove(student);
     }
 }

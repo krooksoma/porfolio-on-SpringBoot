@@ -1,6 +1,6 @@
-package com.jpa.spa.dao;
+package com.jpa.schoolDirectory.dao;
 
-import com.jpa.spa.entitiy.Student;
+import com.jpa.schoolDirectory.entitiy.Student;
 
 import java.util.List;
 
@@ -12,4 +12,8 @@ public interface StudentDAO {
     List<Student> findAll();
 
     List<Student> findByLastName(String lastName);
+
+    void updateStudentFirstName(Integer id, String info);
+
+    void deleteStudent(Integer id);
 }

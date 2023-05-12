@@ -1,7 +1,7 @@
-package com.jpa.spa;
+package com.jpa.schoolDirectory;
 
-import com.jpa.spa.dao.StudentDAO;
-import com.jpa.spa.entitiy.Student;
+import com.jpa.schoolDirectory.dao.StudentDAO;
+import com.jpa.schoolDirectory.entitiy.Student;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,21 +10,37 @@ import org.springframework.context.annotation.Bean;
 import java.util.List;
 
 @SpringBootApplication
-public class SpaApplication {
+public class SchoolDirectory {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpaApplication.class, args);
+		SpringApplication.run(SchoolDirectory.class, args);
 	}
 
 
 	@Bean
 	public CommandLineRunner commandLineRunner(StudentDAO studentDAO){
 		return runner -> {
-			//createStudent(studentDAO);
-			//findStudent(studentDAO);
-			//findAllStudents(studentDAO);
-			findByLastName(studentDAO);
+
+			// createStudent(studentDAO);
+			// findStudent(studentDAO);
+			// findAllStudents(studentDAO);
+			// findByLastName(studentDAO);
+			// updateStudentFirstName(studentDAO);
+			// deleteStudentById(studentDAO);
 		};
+	}
+
+	private void deleteStudentById(StudentDAO studentDAO) {
+		System.out.println("Deleting student with id: " + studentDAO.toString());
+		studentDAO.deleteStudent(5);
+	}
+
+	private void updateStudentFirstName(StudentDAO studentDAO) {
+		studentDAO.updateStudentFirstName(5, "Evelyn");
+		Student student = studentDAO.findById(5);
+
+		System.out.println("Saving new information for : " + student.toString());
+
 	}
 
 	private void findByLastName(StudentDAO studentDAO) {

@@ -1,4 +1,4 @@
-package com.jpa.spa.entitiy;
+package com.jpa.schoolDirectory.entitiy;
 
 import jakarta.persistence.*;
 
@@ -20,6 +20,13 @@ public class Student {
     private Student(){};
 
     public Student(String firstName, String lastName, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+    }
+
+    public Student(int id, String firstName, String lastName, String email) {
+        this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
