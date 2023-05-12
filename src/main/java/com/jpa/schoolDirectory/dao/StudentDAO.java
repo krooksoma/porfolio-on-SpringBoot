@@ -1,6 +1,6 @@
-package com.jpa.spa.dao;
+package com.jpa.schoolDirectory.dao;
 
-import com.jpa.spa.entitiy.Student;
+import com.jpa.schoolDirectory.entitiy.Student;
 
 import java.util.List;
 

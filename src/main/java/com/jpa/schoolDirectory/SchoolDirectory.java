@@ -1,7 +1,7 @@
-package com.jpa.spa;
+package com.jpa.schoolDirectory;
 
-import com.jpa.spa.dao.StudentDAO;
-import com.jpa.spa.entitiy.Student;
+import com.jpa.schoolDirectory.dao.StudentDAO;
+import com.jpa.schoolDirectory.entitiy.Student;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -10,10 +10,10 @@ import org.springframework.context.annotation.Bean;
 import java.util.List;
 
 @SpringBootApplication
-public class SpaApplication {
+public class SchoolDirectory {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpaApplication.class, args);
+		SpringApplication.run(SchoolDirectory.class, args);
 	}
 
 
@@ -26,7 +26,7 @@ public class SpaApplication {
 			// findAllStudents(studentDAO);
 			// findByLastName(studentDAO);
 			// updateStudentFirstName(studentDAO);
-			deleteStudentById(studentDAO);
+			// deleteStudentById(studentDAO);
 		};
 	}
 
