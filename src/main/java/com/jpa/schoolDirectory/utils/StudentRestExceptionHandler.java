@@ -21,4 +21,19 @@ public class StudentRestExceptionHandler {
 
         return new ResponseEntity<>(error, HttpStatus.NOT_FOUND);
     }
+
+
+    //add another generic Exception Handler
+    @ExceptionHandler
+    public ResponseEntity<StudentErrorResponse> handleException (Exception exc){
+
+        StudentErrorResponse error = new StudentErrorResponse();
+
+        //400 response instead of 404(NOT_FOUND)
+        error.setStatus(HttpStatus.BAD_REQUEST.value());
+        error.setMessage(exc.getMessage());
+        error.setTimestamp(new Date(System.currentTimeMillis()));
+
+        return new ResponseEntity<>(error, HttpStatus.BAD_REQUEST);
+    }
 }
