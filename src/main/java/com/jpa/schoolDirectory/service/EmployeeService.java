@@ -1,11 +1,10 @@
-package com.jpa.schoolDirectory.dao;
-
+package com.jpa.schoolDirectory.service;
 
 import com.jpa.schoolDirectory.entitiy.Employee;
 
 import java.util.List;
 
-public interface EmployeeDAO {
+public interface EmployeeService {
 
     List<Employee> findAll();
 
@@ -14,4 +13,5 @@ public interface EmployeeDAO {
     Employee saveEmployee(Employee theEmployee);
 
     void deleteEmployeeById(long theId);
+
 }
