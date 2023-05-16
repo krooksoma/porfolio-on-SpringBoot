@@ -2,41 +2,38 @@ package com.jpa.schoolDirectory.entitiy;
 
 import jakarta.persistence.*;
 
-/*table and column annotations are optional. Usually not a recommended approach*/
 
 @Entity
-public class Student {
+@Table(name="employee")
+public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    @Column(name="id")
+    private Long id;
 
+    @Column(name="first_name")
     private String firstName;
 
+    @Column(name="last_name")
     private String lastName;
 
+    @Column(name="email")
     private String email;
 
-    private Student(){};
+    public Employee(){}
 
-    public Student(String firstName, String lastName, String email) {
+    public Employee(String firstName, String lastName, String email){
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
     }
 
-    public Student(int id, String firstName, String lastName, String email) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-    }
-
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
@@ -66,7 +63,7 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" +
+        return "Employee{" +
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
