@@ -40,13 +40,19 @@ public class EmployeeRESTController {
     public void deleteEmployee(@PathVariable Long id){
         Employee theEmployee = employeeService.findEmployeeById(id);
 
+        if(theEmployee == null){
+            throw new RuntimeException("Employee id not found - " + id);
+        }
 
         employeeService.deleteEmployeeById(theEmployee.getId());
+
+        System.out.println("Employee with id: " + id + " was deleted.");
     }
 
     @PutMapping("/employee")
     public Employee updateEmployee(@RequestBody Employee theEmployee){
         Employee dbEmployee = employeeService.saveEmployee(theEmployee);
+
 
         return dbEmployee;
     }
