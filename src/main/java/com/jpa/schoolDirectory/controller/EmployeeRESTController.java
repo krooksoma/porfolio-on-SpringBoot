@@ -16,8 +16,8 @@ public class EmployeeRESTController {
     private EmployeeService employeeService;
 
     @Autowired
-    public EmployeeRESTController(EmployeeService employeeService) {
-        this.employeeService = employeeService;
+    public EmployeeRESTController(EmployeeService theEmployeeService) {
+        employeeService = theEmployeeService;
     }
 
     @GetMapping("/employees")
@@ -36,14 +36,23 @@ public class EmployeeRESTController {
         return dbEmployee;
     }
 
-    @PostMapping("/employee")
-    public void deleteEmployee(@RequestBody Long id){
+    @DeleteMapping("/employee/{id}")
+    public void deleteEmployee(@PathVariable Long id){
+        Employee theEmployee = employeeService.findEmployeeById(id);
 
-        employeeService.deleteEmployeeById(id);
+
+        employeeService.deleteEmployeeById(theEmployee.getId());
+    }
+
+    @PutMapping("/employee")
+    public Employee updateEmployee(@RequestBody Employee theEmployee){
+        Employee dbEmployee = employeeService.saveEmployee(theEmployee);
+
+        return dbEmployee;
     }
 
     @GetMapping("/employee/{id}")
-    public Employee findEmployeedById(Long id){
+    public Employee findEmployeedById(@PathVariable Long id){
         Employee theEmployee = employeeService.findEmployeeById(id);
 
         if(theEmployee == null){

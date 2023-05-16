@@ -5,13 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8210ec78-783c-4401-be00-985ea44a35b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/service/EmployeeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/service/EmployeeServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/controller/EmployeeRESTController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/controller/EmployeeRESTController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/dao/EmployeeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/dao/EmployeeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/dao/EmployeeDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/dao/EmployeeJPADAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/dao/EmployeeJPADAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/dao/EmployeeJPADAOImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/SchoolDirectory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/SchoolDirectory.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/controller/EmployeeRESTController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/controller/EmployeeRESTController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/dao/EmployeeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/dao/EmployeeDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/dao/EmployeeDAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/entitiy/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/entitiy/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/service/EmployeeService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/service/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/service/EmployeeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/utils/StudentErrorResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/utils/StudentErrorResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/utils/StudentNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/utils/StudentNotFoundException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/utils/StudentRestExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/utils/StudentRestExceptionHandler.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,35 +67,27 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="Use Maven wrapper" />
         <option name="useMavenConfig" value="true" />
         <option name="usePluginRegistry" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
   <component name="ProjectId" id="2PYeYp8AJwaSRFGhoWDqKH1T0R2" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
-    <property name="Repository.Attach.Annotations" value="false" />
-    <property name="Repository.Attach.JavaDocs" value="false" />
-    <property name="Repository.Attach.Sources" value="false" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "settings.editor.selected.configurable": "MavenSettings"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -95,8 +95,10 @@
   </component>
   <component name="RunManager">
     <configuration name="SchoolDirectory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="17" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.jpa.schoolDirectory.SchoolDirectory" />
-      <module name="demo" />
+      <module name="spa" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.jpa.schoolDirectory.*" />
