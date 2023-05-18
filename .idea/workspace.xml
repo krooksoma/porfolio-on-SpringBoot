@@ -5,21 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8210ec78-783c-4401-be00-985ea44a35b7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/repository/EmployeeRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/controller/EmployeeRESTController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/controller/EmployeeRESTController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/dao/EmployeeJPADAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/dao/EmployeeJPADAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/SchoolDirectory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/SchoolDirectory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/dao/EmployeeDAO.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/dao/EmployeeJPADAOImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/entitiy/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/entitiy/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/service/EmployeeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/service/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/service/EmployeeServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/controller/EmployeeRESTController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/controller/EmployeeRESTController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/dao/EmployeeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/dao/EmployeeDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/dao/EmployeeDAOImpl.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/entitiy/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/entitiy/Employee.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/service/EmployeeService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/service/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/service/EmployeeServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/utils/StudentErrorResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/utils/StudentErrorResponse.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/utils/StudentNotFoundException.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/utils/StudentNotFoundException.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/utils/StudentRestExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/utils/StudentRestExceptionHandler.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -84,7 +81,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "DEV/1.0.0__8",
     "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>

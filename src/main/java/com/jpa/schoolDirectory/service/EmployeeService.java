@@ -3,15 +3,16 @@ package com.jpa.schoolDirectory.service;
 import com.jpa.schoolDirectory.entitiy.Employee;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface EmployeeService {
 
     List<Employee> findAll();
 
-    Employee findEmployeeById(Long id);
+    Employee findEmployeeById(int id);
 
     Employee saveEmployee(Employee theEmployee);
 
-    void deleteEmployeeById(long theId);
+    void deleteById(int theId);
 
 }

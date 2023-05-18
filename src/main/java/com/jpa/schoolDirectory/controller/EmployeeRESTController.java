@@ -1,10 +1,9 @@
 package com.jpa.schoolDirectory.controller;
 
-import com.jpa.schoolDirectory.dao.EmployeeDAO;
+
 import com.jpa.schoolDirectory.entitiy.Employee;
 import com.jpa.schoolDirectory.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -29,7 +28,7 @@ public class EmployeeRESTController {
     public Employee addEmployee(@RequestBody Employee theEmployee){
         //just in case they pass ID in Json .. set id to 0
         //force save new item
-        theEmployee.setId(0L);
+        theEmployee.setId(0);
 
         Employee dbEmployee = employeeService.saveEmployee(theEmployee);
 
@@ -37,11 +36,11 @@ public class EmployeeRESTController {
     }
 
     @DeleteMapping("/employee/{id}")
-    public void deleteEmployee(@PathVariable Long id){
+    public void deleteEmployee(@PathVariable int id){
         Employee theEmployee = employeeService.findEmployeeById(id);
 
 
-        employeeService.deleteEmployeeById(theEmployee.getId());
+        employeeService.deleteById(theEmployee.getId());
     }
 
     @PutMapping("/employee")
@@ -52,7 +51,7 @@ public class EmployeeRESTController {
     }
 
     @GetMapping("/employee/{id}")
-    public Employee findEmployeedById(@PathVariable Long id){
+    public Employee findEmployeedById(@PathVariable int id){
         Employee theEmployee = employeeService.findEmployeeById(id);
 
         if(theEmployee == null){
