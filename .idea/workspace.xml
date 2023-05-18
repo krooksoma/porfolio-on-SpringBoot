@@ -5,23 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8210ec78-783c-4401-be00-985ea44a35b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/repository/EmployeeRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/controller/EmployeeRESTController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/controller/EmployeeRESTController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/dao/EmployeeDAO.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/dao/EmployeeJPADAOImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/entitiy/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/entitiy/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/service/EmployeeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/service/EmployeeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/service/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/service/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/controller/EmployeeRESTController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/controller/EmployeeRESTController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/entitiy/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/entitiy/Employee.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/service/EmployeeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/service/EmployeeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/service/EmployeeServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/service/EmployeeServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/SchoolDirectory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/SchoolDirectory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/controller/EmployeeRESTController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/repository/EmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/repository/EmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/service/EmployeeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/service/EmployeeServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/SchoolDirectory.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/SchoolDirectory.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/controller/EmployeeRESTController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/dao/EmployeeDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/dao/EmployeeJPADAOImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/service/EmployeeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/service/EmployeeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -81,8 +88,16 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "DEV/1.0.0__8",
-    "settings.editor.selected.configurable": "MavenSettings"
+    "git-widget-placeholder": "DEV/1.0.0__9",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "advanced.settings"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
