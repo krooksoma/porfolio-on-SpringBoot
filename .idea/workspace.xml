@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8210ec78-783c-4401-be00-985ea44a35b7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/utils/project_ddls.ddl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/utils/project_ddls_V2.ddl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/securityConfigurations/AppSecurityConfigurations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/securityConfigurations/AppSecurityConfigurations.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/securityConfigurations/AppSecurityConfigurations.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/jpa/schoolDirectory/securityConfigurations/AppSecurityConfigurations.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/utils/project_ddls.ddl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jpa/schoolDirectory/utils/project_ddls.ddl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +77,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "DEV/1.0.0__11",
+    "git-widget-placeholder": "DEV/1.0.0__12",
+    "last_opened_file_path": "C:/Users/romul/IdeaProjects/porfolio-on-SpringBoot/src/main/java/com/jpa/schoolDirectory/utils",
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2",
@@ -93,6 +95,7 @@
       <recent name="com.jpa.schoolDirectory.service" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\romul\IdeaProjects\porfolio-on-SpringBoot\src\main\java\com\jpa\schoolDirectory\utils" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
