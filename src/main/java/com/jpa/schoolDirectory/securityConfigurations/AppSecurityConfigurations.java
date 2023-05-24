@@ -19,25 +19,36 @@ public class AppSecurityConfigurations {
 
     @Bean
     public UserDetailsManager userDetailsManager(DataSource datasource){
-        return new JdbcUserDetailsManager(datasource);
+        JdbcUserDetailsManager jdbcUserDetailsManager = new JdbcUserDetailsManager(datasource);
+
+        jdbcUserDetailsManager.setUsersByUsernameQuery(
+                "SELECT user_id, pwd, active FROM members WHERE user_id=?"
+        );
+
+        jdbcUserDetailsManager.setAuthoritiesByUsernameQuery(
+                "SELECT user_id, role FROM roles WHERE user_id=?"
+        );
+
+        return jdbcUserDetailsManager;
     }
 
-    @Bean
-    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
-        http.authorizeHttpRequests(configurer ->
-                configurer
-                        .requestMatchers(HttpMethod.GET, "/api/employees").hasRole("EMPLOYEE")
-                        .requestMatchers(HttpMethod.GET, "/api/employees/**").hasRole("EMPLOYEE")
-                        .requestMatchers(HttpMethod.POST, "/api/employee").hasRole("MANAGER")
-                        .requestMatchers(HttpMethod.PUT, "/api/employee").hasRole("MANAGER")
-                        .requestMatchers(HttpMethod.DELETE, "/api/employee/**").hasRole("ADMIN")
-                );
-
-        http.httpBasic();
-
-        //CrossSystemRequestForgery not required for stateless REST APIs, so it can be disabled
-        http.csrf().disable();
-
-        return http.build();
-    }
+//    @Bean
+//    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception{
+//        http.authorizeHttpRequests(configurer ->
+//                configurer
+//                        .requestMatchers(HttpMethod.GET, "/api/employees").hasRole("EMPLOYEE")
+//                        .requestMatchers(HttpMethod.GET, "/api/employees/**").hasRole("EMPLOYEE")
+//                        .requestMatchers(HttpMethod.POST, "/api/employee").hasRole("MANAGER")
+//                        .requestMatchers(HttpMethod.PUT, "/api/employee").hasRole("MANAGER")
+//                        .requestMatchers(HttpMethod.DELETE, "/api/employee/**").hasRole("ADMIN")
+//                        .requestMatchers(HttpMethod.GET, "/time").hasRole("EMPLOYEE")
+//                );
+//
+//        http.httpBasic();
+//
+//        //CrossSystemRequestForgery not required for stateless REST APIs, so it can be disabled
+//        http.csrf().disable();
+//
+//        return http.build();
+//    }
 }
