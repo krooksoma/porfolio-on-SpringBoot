@@ -28,31 +28,31 @@ primary key (`id`)
 
 drop table `users`;
 
-CREATE TABLE `users` (
-  `username` varchar(50) NOT NULL,
-  `password` varchar(80) NOT NULL,
-  `enabled` tinyint NOT NULL,
-PRIMARY KEY (`username`)
+CREATE TABLE `members` (
+  `user_id` varchar(50) NOT NULL,
+  `pwd` varchar(80) NOT NULL,
+  `active` tinyint NOT NULL,
+PRIMARY KEY (`user_id`)
 )ENGINE = InnoDB DEFAULT CHARSET=latin1;
 
 drop table `authorities`;
 
 -- target table authorities--
 
-CREATE TABLE `authorities`(
-  `username` varchar(50) NOT NULL,
-  `authority` varchar(50) NOT NULL,
-  UNIQUE KEY `authorities_idx_1` (`username`, `authority`),
-CONSTRAINT `authorities_ibfk_1`
-FOREIGN KEY (`username`)
-REFERENCES `users` (`username`)
+CREATE TABLE `roles`(
+  `user_id` varchar(50) NOT NULL,
+  `role` varchar(50) NOT NULL,
+  UNIQUE KEY `roles_idx_1` (`user_id`, `role`),
+CONSTRAINT `roles_ibfk_1`
+FOREIGN KEY (`user_id`)
+REFERENCES `members` (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -------------
 --Mock Data--
 ------------
 
-INSERT INTO `users`
+INSERT INTO `members`
 VALUES
 ('John', '{bcrypt}$2a$10$T.X38dhW7X9bQljqJPkcXuW39NxNZLYDugL44R1q7nSAMWJNpBpIy', 1),
 ('Mary', '{bcrypt}$2a$10$Hbnu1jYtJa9z1Bt3lPzeCO0BmKII3p.EIHBIJ0iUzx72jHMDTp1Qe', 1),
@@ -60,7 +60,7 @@ VALUES
 
 
 
-INSERT INTO `authorities`
+INSERT INTO `roles`
 VALUES
 ('John', 'ROLE_EMPLOYEE'),
 ('Mary', 'ROLE_EMPLOYEE'),
